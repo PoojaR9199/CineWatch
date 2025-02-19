@@ -83,6 +83,7 @@ public class RowService {
                 seat.setStatus(Seat.SeatStatus.AVAILABLE);
                 seat.setRow(row);
                 seats.add(seat);
+                System.out.println(seats);
             }
 
             seatRepository.saveAll(seats);
